@@ -1,0 +1,339 @@
+page: begin
+
+l: age
+t: textline
+o: require
+q: How old are you?
+- {min=10,max=100} Type your age (must be numerical)
+
+l: genre
+t: radio
+o: link
+o: require
+q: What is your gender?
+- Male
+- Female
+- Other
+
+l: english
+t: range
+o: link
+o: require
+q: How do you rate your ability to understand English on a scale from one to ten?
+- {min=0,max=10,left=I don't understand anything,right=native} 
+
+l: country
+t: textline
+q: Where are you from?
+- {require} Country
+
+page: end
+
+
+l: some_message
+t: info
+q: The first part of the study will now start. We will ask you questions regarding your personality. <b>All collected data will be treated anonymously and confidentially. No link between your identity and your answers will be established.</b> 
+
+scale: agree
+- {score=1} 1 
+- {score=2} 2 
+- {score=3} 3 
+- {score=4} 4  
+- {score=5} 5 
+
+
+l: personality
+q: We’re interested in the way people describes themselves. You will find below a list of descriptions and we ask you to answer them as honestly as possible. Please take the time to read the questions and pick the answer that best suits you. There are no wrong answers. <br>
+The scores are as follows: 
+1=does not describe me at all 
+2=does not describe me well
+3=indifferent 
+4=partially describes me 
+5=describes me very well 
+o: random
+t: scale agree
+- I daydream and fantasize, with some regularity, about things that might happen to me. 
+- I often have tender, concerned feelings for people less fortunate than me. 
+- {reverse} I sometimes find it difficult to see things from the "other guy's" point of view. 
+- {reverse} Sometimes I don't feel very sorry for other people when they are having problems.
+- I really get involved with the feelings of the characters in a novel. 
+- In emergency situations, I feel apprehensive and ill-at-ease.
+- {reverse} I am usually objective when I watch a movie or play, and I don't often get completely caught up in it.
+- I try to look at everybody's side of a disagreement before I make a decision. 
+- When I see someone being taken advantage of, I feel kind of protective towards them.
+- I sometimes feel helpless when I am in the middle of a very emotional situation.
+- I sometimes try to understand my friends better by imagining how things look from their perspective.
+- {reverse} Becoming extremely involved in a good book or movie is somewhat rare for me. 
+- {reverse} When I see someone get hurt, I tend to remain calm.
+- {reverse} Other people's misfortunes do not usually disturb me a great deal.  
+- {reverse} If I'm sure I'm right about something, I don't waste much time listening to other people's arguments.
+- After seeing a play or movie, I have felt as though I were one of the characters. 
+- Being in a tense emotional situation scares me.  
+- {reverse} When I see someone being treated unfairly, I sometimes don't feel very much pity for them.
+- {reverse} I am usually pretty effective in dealing with emergencies.
+- I am often quite touched by things that I see happen.
+- I believe that there are two sides to every question and try to look at them both.
+- I would describe myself as a pretty soft-hearted person. 
+- When I watch a good movie, I can very easily put myself in the place of a leading character.
+- I tend to lose control during emergencies. 
+- When I'm upset at someone, I usually try to "put myself in his shoes" for a while.
+- When I am reading an interesting story or novel, I imagine how I would feel if the events in the story were happening to me.
+- When I see someone who badly needs help in an emergency, I go to pieces.
+- Before criticizing somebody, I try to imagine how I would feel if I were in their place.
+
+page: end
+
+random: begin
+
+page: begin
+
+l: Q1
+v: https://drive.google.com/file/d/1mw9Y01zIpE2fbUn3da3GmYi3zoZTiwkY/view?usp=sharing
+o: no_video_replay
+o: video_width 300
+t: radio
+q: Do you think the person is telling the truth or do you think the person is lying?
+- I think the person is telling the TRUTH
+- I think the person is LYING
+
+
+l: Q1_2
+t: range
+o: link
+o: require
+q: How certain are you about your answer? 0% means completely not sure, 100% means completely sure.
+- {min=0,max=100}
+
+page: end
+
+page: begin
+
+l: Q2
+v: https://drive.google.com/file/d/1zDw8_Ua0CBpd18PJBJmT3YIdbcHBKBSM/view?usp=sharing
+o: no_video_replay
+o: video_width 300
+t: radio
+q: Do you think the person is telling the truth or do you think the person is lying?
+- I think the person is telling the TRUTH
+- I think the person is LYING
+
+l: Q2_2
+t: range
+o: link
+o: require
+q: How certain are you about your answer? 0% means completely not sure, 100% means completely sure.
+- {min=0,max=100}
+
+page: end
+
+page: begin
+
+l: Q3
+v: https://drive.google.com/file/d/180rwLNHiDfFcYYrwrW4aYafRCCcD4W5S/view?usp=sharing
+o: no_video_replay
+o: video_width 300
+t: radio
+q: Do you think the person is telling the truth or do you think the person is lying?
+- I think the person is telling the TRUTH
+- I think the person is LYING
+
+l: Q3_2
+t: range
+o: link
+o: require
+q: How certain are you about your answer? 0% means completely not sure, 100% means completely sure.
+- {min=0,max=100}
+
+
+page: end
+
+page: begin 
+
+l: fake_image
+i: Diapositiva1.jpg
+t: info 
+q: Some feedback!
+
+page: end
+
+page: begin
+
+l: Q4
+v: https://drive.google.com/file/d/1KOrmRqe0_QWpzcdPucIbSq4qQN_xp_pC/view?usp=sharing
+o: no_video_replay
+o: video_width 300
+t: radio
+q: Do you think the person is telling the truth or do you think the person is lying?
+- I think the person is telling the TRUTH
+- I think the person is LYING
+
+l: Q4_2
+t: range
+o: link
+o: require
+q: How certain are you about your answer? 0% means completely not sure, 100% means completely sure.
+- {min=0,max=100}
+
+page: end
+
+page: begin
+
+l: Q5
+v: https://drive.google.com/file/d/1qRSoRbfcxMSdVidFKgxLUypmb0E7rhWW/view?usp=sharing
+o: no_video_replay
+o: video_width 300
+t: radio
+q: Do you think the person is telling the truth or do you think the person is lying?
+- I think the person is telling the TRUTH
+- I think the person is LYING
+
+l: Q5_2
+t: range
+o: link
+o: require
+q: How certain are you about your answer? 0% means completely not sure, 100% means completely sure.
+- {min=0,max=100}
+
+page: end
+
+page: begin
+
+l: Q6
+v: https://drive.google.com/file/d/1nR21IItMqcB_OSLpcZcbfZEKv0LCHZ84/view?usp=sharing
+o: no_video_replay
+o: video_width 300
+t: radio
+q: Do you think the person is telling the truth or do you think the person is lying?
+- I think the person is telling the TRUTH
+- I think the person is LYING
+
+l: Q6_2
+t: range
+o: link
+o: require
+q: How certain are you about your answer? 0% means completely not sure, 100% means completely sure.
+- {min=0,max=100}
+
+page: end
+
+page: begin
+
+l: Q7
+v: https://drive.google.com/file/d/1mv6MtqH8ZgZkS9lz_kbbWDO4v7zyfYbY/view?usp=sharing
+o: no_video_replay
+o: video_width 300
+t: radio
+q: Do you think the person is telling the truth or do you think the person is lying?
+- I think the person is telling the TRUTH
+- I think the person is LYING
+
+l: Q7_2
+t: range
+o: link
+o: require
+q: How certain are you about your answer? 0% means completely not sure, 100% means completely sure.
+- {min=0,max=100}
+
+page: end
+
+page: begin
+
+l: Q8
+v: https://drive.google.com/file/d/1SKeueH23JXkAXwAjS6qwc5INDOsJE-5Y/view?usp=sharing
+o: no_video_replay
+o: video_width 300
+t: radio
+q: Do you think the person is telling the truth or do you think the person is lying?
+- I think the person is telling the TRUTH
+- I think the person is LYING
+
+l: Q8_2
+t: range
+o: link
+o: require
+q: How certain are you about your answer? 0% means completely not sure, 100% means completely sure.
+- {min=0,max=100}
+
+page: end
+
+page: begin
+
+l: Q9
+v: https://drive.google.com/file/d/16Vr5rzj8XVCnBl4o1kFJHscMgkgZRRMC/view?usp=sharing
+o: no_video_replay
+o: video_width 300
+t: radio
+q: Do you think the person is telling the truth or do you think the person is lying?
+- I think the person is telling the TRUTH
+- I think the person is LYING
+
+l: Q9_2
+t: range
+o: link
+o: require
+q: How certain are you about your answer? 0% means completely not sure, 100% means completely sure.
+- {min=0,max=100}
+
+page: end
+
+page: begin
+
+l: Q10
+v: https://drive.google.com/file/d/1IasRZE1txdcswksRQLgEEqoRBH_vKrVu/view?usp=sharing
+o: no_video_replay
+o: video_width 300
+t: radio
+q: Do you think the person is telling the truth or do you think the person is lying?
+- I think the person is telling the TRUTH
+- I think the person is LYING
+
+l: Q10_2
+t: range
+o: link
+o: require
+q: How certain are you about your answer? 0% means completely not sure, 100% means completely sure.
+- {min=0,max=100}
+
+page: end
+
+page: begin
+
+l: Q11
+v: https://drive.google.com/file/d/1mpXgMKEoLA098tY3XRSaOvWpVo6K74sL/view?usp=sharing
+o: no_video_replay
+o: video_width 300
+t: radio
+q: Do you think the person is telling the truth or do you think the person is lying?
+- I think the person is telling the TRUTH
+- I think the person is LYING
+
+l: Q11_2
+t: range
+o: link
+o: require
+q: How certain are you about your answer? 0% means completely not sure, 100% means completely sure.
+- {min=0,max=100}
+
+page: end
+
+page: begin
+
+l: Q12
+v: https://drive.google.com/file/d/1n7ur85SzNrCBfykmyK7dpUt_nSYQxhVR/view?usp=sharing
+o: no_video_replay
+o: video_width 300
+t: radio
+q: Do you think the person is telling the truth or do you think the person is lying?
+- I think the person is telling the TRUTH
+- I think the person is LYING
+
+l: Q12_2
+t: range
+o: link
+o: require
+q: How certain are you about your answer? 0% means completely not sure, 100% means completely sure.
+- {min=0,max=100}
+
+page: end
+
+random: end

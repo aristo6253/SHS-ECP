@@ -1,0 +1,9 @@
+version: 3.4.2
+server-time: 2023-04-14-09-28
+user_agent: mozilla/5.0 (linux; android 13; sm-s908e build/tp1a.220624.014; wv) applewebkit/537.36 (khtml, like gecko) version/4.0 chrome/111.0.5563.116 mobile safari/537.36 [fb_iab/orca-android;fbav/403.1.0.17.106;]
+screen_width: 0
+screen_height: 0
+html_width: 0
+html_height: 0
+user_time: 0
+T: 0
